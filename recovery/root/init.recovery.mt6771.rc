@@ -150,9 +150,3 @@ service health-hal-2-1 /system/bin/android.hardware.health@2.1-service
     user root
 
    
-#on post-fs-data
-#    mkdir /data/vendor_de 0770 system system
-#    mkdir /data/vendor_de/0 0770 system system 
-#    mkdir /data/vendor_ce/0 0770 system system
-#    mkdir /data/misc_ce/0 0770 system system
-#    mkdir /data/system_ce/0 0770 system system
