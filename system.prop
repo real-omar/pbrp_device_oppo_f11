@@ -5,12 +5,13 @@ ro.mediatek.platform=MT6771
 ro.treble.enabled=true
 ro.vndk.version=30
 
-#for ota updates
-ro.product.device=OP4C4B
-ro.product.product.device=OP4C4B
-ro.product.name=CPH1989
-ro.commonsoft.ota=OP4C4B
-ro.separate.soft=19533
+# For OTA using f11 props
+ro.product.device=OP4863
+ro.product.product.device=OP4863
+ro.product.name=CPH1911
+ro.build.product=CPH1911
+ro.commonsoft.ota=OP4863
+ro.product.model=CPH1911
 
 #crypto
 ro.vendor.mtk_trustonic_tee_support=1
