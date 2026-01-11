@@ -143,6 +143,9 @@ on boot
     start health-hal-2-1
     start boot-hal-1-0   #for booting ofox
 
+    chown system system /proc/touchpanel/tp_fw_update
+    write /proc/touchpanel/tp_fw_update 1
+
 service health-hal-2-1 /system/bin/android.hardware.health@2.1-service
     disabled
     user root
@@ -152,9 +155,3 @@ service boot-hal-1-0 /system/bin/android.hardware.boot@1.0-service  #for booting
     user root
 
    
-on post-fs-data
-    mkdir /data/vendor_de 0770 system system
-    mkdir /data/vendor_de/0 0770 system system 
-    mkdir /data/vendor_ce/0 0770 system system
-    mkdir /data/misc_ce/0 0770 system system
-    mkdir /data/system_ce/0 0770 system system
