@@ -31,7 +31,7 @@ export FOX_USE_GREP_BINARY="1"
 
 # for oppo/realme ozip decryption
 export OF_SUPPORT_OZIP_DECRYPTION=1
-export TW_OZIP_DECRYPT_KEY="ACAC1E13A72431AE4A1B22BBA1C1C6A2"
+export TW_OZIP_DECRYPT_KEY="ACAC1E13A72431AEUA1B22BBA1C1C6A2"
 
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER="1"
 
@@ -53,10 +53,11 @@ export OF_STATUS_INDENT_LEFT=48
 export OF_STATUS_INDENT_RIGHT=48
 
 export OF_ADVANCED_SECURITY="0"  #disable it for the time being to take logs
-export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31  #disabled until testing a12
 export OF_QUICK_BACKUP_LIST="/boot;/data;"
-#trying to fix decryption
-export OF_FIX_DECRYPTION_ON_DATA_MEDIA="1"  #may be not supported
+#f11
+export OF_HIDE_NOTCH="1"
+export OF_STATUS_H="144"
+export OF_SKIP_FBE_DECRYPTION="1"
 
 #partitions path
 export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/by-name/recovery"
@@ -71,7 +72,7 @@ function download_magisk(){
     if [ -n "${DEST}" ]; then
       if [ ! -e ${DEST} ]; then
         echo "Downloading Magisk Version 27.0..."
-        local MAGISK_V27_URL="https://github.com/topjohnwu/Magisk/releases/download/v27.0/Magisk-v27.0.apk"
+        local MAGISK_V27_URL="https://github.com/topjohnwu/Magisk/releases/download/v30.6/Magisk-v30.6.apk"
         mkdir -p $(dirname ${DEST})
         wget -q ${MAGISK_V27_URL} -O ${DEST} || wget ${MAGISK_V27_URL} -O ${DEST}
         local RCODE=$?
