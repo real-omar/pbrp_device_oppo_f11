@@ -14,7 +14,7 @@
 
 /dev/block/by-name/cache /cache ext4 noatime,nosuid,nodev,noauto_da_alloc,async_discard,defrag=on wait,check,formattable  #from fstab.mt6771
 
-/dev/block/by-name/persist /persist ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
+#/dev/block/by-name/persist /persist ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 
 
 /dev/block/by-name/frp /persistent emmc defaults defaults
