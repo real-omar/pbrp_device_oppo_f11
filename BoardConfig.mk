@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oppo/CPH1989
+DEVICE_PATH := device/oppo/CPH1911
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
