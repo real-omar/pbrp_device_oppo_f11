@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/oppo/CPH1989
+LOCAL_PATH := device/oppo/CPH1911
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := CPH1911
