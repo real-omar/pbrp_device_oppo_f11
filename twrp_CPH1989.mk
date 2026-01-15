@@ -17,10 +17,10 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from CPH2001 device
 # $(call inherit-product, device/oppo/CPH1989/device.mk)
 
-PRODUCT_DEVICE := CPH1989
+PRODUCT_DEVICE := CPH1911
 PRODUCT_NAME := twrp_CPH1989
 PRODUCT_BRAND := oppo
-PRODUCT_MODEL := Reno 2F
+PRODUCT_MODEL := F11
 PRODUCT_MANUFACTURER := oppo
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
