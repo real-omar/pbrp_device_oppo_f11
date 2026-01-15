@@ -57,7 +57,7 @@ export FOX_SETTINGS_ROOT_DIRECTORY="/persist/OFRP"
 export FOX_MISCELLANEOUS_ROOT_DIRECTORY="/data/media/OFRP"
 export OF_QUICK_BACKUP_LIST="/boot;/data;"
 export OF_DEFAULT_TIMEZONE="WET-2"
-export FOX_LOCAL_CALLBACK_SCRIPT="device/oppo/CPH1989/recovery/root/my_callback.sh"
+export FOX_LOCAL_CALLBACK_SCRIPT="device/oppo/CPH1911/recovery/root/my_callback.sh"
 #export OF_FIX_DECRYPTION_ON_DATA_MEDIA="1"
 
 export OF_ADVANCED_SECURITY=1
