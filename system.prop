@@ -7,7 +7,7 @@ ro.vndk.version=30
 # For OTA using f11 props
 ro.product.device=OP4863
 ro.product.product.device=OP4863
-ro.product.name=CPH1911
+#ro.product.name=CPH1911
 ro.build.product=CPH1911
 ro.commonsoft.ota=OP4863
 ro.product.model=CPH1911
