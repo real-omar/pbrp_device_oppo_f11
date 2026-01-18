@@ -40,7 +40,7 @@ export FOX_INSTALLER_DISABLE_AUTOREBOOT="0"
 export OF_MAINTAINER="Omar"
 export FOX_BUILD_TYPE="Unofficial"
 FOX_TARGET_DEVICES="CPH1911,OP4863,CPH1969,CPH1913"
-export TARGET_DEVICE_ALT="OP4863, CPH1911, CPH1969"
+export TARGET_DEVICE_ALT="OP4863, CPH1911, CPH1969, CPH1913"
 #export FOX_MAINTAINER_PATCH_VERSION="R11.1"
 export FOX_VARIANT="Unified"
 
@@ -62,7 +62,27 @@ export FOX_LOCAL_CALLBACK_SCRIPT="device/oppo/CPH1911/recovery/root/my_callback.
 
 export OF_ADVANCED_SECURITY=1
 # Magisk
-
+function download_magisk(){
+    # Usage: download_magisk <destination_path>
+    local DEST=$1
+    if [ -n "${DEST}" ]; then
+      if [ ! -e ${DEST} ]; then
+        echo "Downloading Magisk Version 30.6..."
+        local MAGISK_V27_URL="https://github.com/topjohnwu/Magisk/releases/download/v30.6/Magisk-v30.6.apk"
+        mkdir -p $(dirname ${DEST})
+        wget -q ${MAGISK_V27_URL} -O ${DEST} || wget ${MAGISK_V27_URL} -O ${DEST}
+        local RCODE=$?
+        if [ "$RCODE" = "0" ]; then
+          echo "Successfully Downloaded Magisk v27.0 to ${DEST}!"
+          echo "Done!"
+        else
+          echo "Failed to Download Magisk v27.0 to ${DEST}!"
+        fi
+      fi
+    fi
+}
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
+download_magisk $FOX_USE_SPECIFIC_MAGISK_ZIP
 
 #"OF_NO_RELOAD_AFTER_DECRYPTION"
 #OF_SKIP_FBE_DECRYPTION_SDKVERSION=31
