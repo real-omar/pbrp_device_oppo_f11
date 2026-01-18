@@ -17,3 +17,4 @@ else
     # Tip: check if you are running 'lunch' from the base of the source tree
     exit 1
 fi
+ln -sf /proc/qcom_flash /system/flashlight/brightness
