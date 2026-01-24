@@ -176,7 +176,7 @@ PB_TORCH_PATH := "/proc/qcom_flash"
 PB_TORCH_MAX_BRIGHTNESS := 1
 
 #skyhawk
-SHRP_DEVICE_CODE := CPH1989
+SHRP_DEVICE_CODE := CPH1911
 SHRP_MAINTAINER := Omar
 SHRP_DARK := true
 SHRP_EDL_MODE := 0
@@ -189,7 +189,7 @@ SHRP_FLASH_MAX_BRIGHTNESS := 1
 SHRP_REC := "/dev/block/by-name/recovery"
 SHRP_EXPRESS := true
 SHRP_DEVICE_TYPE := "A/B"
-SHRP_REC_TYPE := "Normal"
+SHRP_REC_TYPE := "Unified"
 
 
 SHRP_NOTCH := false
