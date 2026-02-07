@@ -134,8 +134,8 @@ TW_INCLUDE_CRYPTO_FBE := false
 #TW_PREPARE_DATA_MEDIA_EARLY := true
 
 #status bar hight
-TW_Y_OFFSET := 67
-TW_H_OFFSET := -67
+TW_Y_OFFSET := 70
+TW_H_OFFSET := -70
 
 # TWRP Configuration
 TW_DEVICE_VERSION := Omar&SeifHecker2099
