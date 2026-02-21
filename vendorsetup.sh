@@ -39,8 +39,12 @@ export OF_ALLOW_DISABLE_NAVBAR="0"
 export OF_USE_LEGACY_BATTERY_SERVICES="1"
 #export FOX_USE_NANO_EDITOR="1"
 #export FOX_USE_XZ_UTILS="1"
+
+#reduce the size for booting
+export FOX_REMOVE_BASH="1"
 export FOX_REMOVE_AAPT="1"
 export FOX_DRASTIC_SIZE_REDUCTION="1"
+export FOX_EXTREME_SIZE_REDUCTION="1"
 
 # for oppo/realme ozip decryption
 export OF_SUPPORT_OZIP_DECRYPTION=1
@@ -70,30 +74,11 @@ export OF_QUICK_BACKUP_LIST="/boot;/data;"
 export OF_DEFAULT_TIMEZONE="WET-2"
 export FOX_LOCAL_CALLBACK_SCRIPT="device/oppo/CPH1911/recovery/root/my_callback.sh"
 export OF_ADVANCED_SECURITY=1
+#Decryption and format data
 export FOX_ALLOW_EARLY_SETTINGS_LOAD="1"
-
-# Magisk
-function download_magisk(){
-    # Usage: download_magisk <destination_path>
-    local DEST=$1
-    if [ -n "${DEST}" ]; then
-      if [ ! -e ${DEST} ]; then
-        echo "Downloading Magisk Version 30.6..."
-        local MAGISK_V27_URL="https://github.com/topjohnwu/Magisk/releases/download/v30.6/Magisk-v30.6.apk"
-        mkdir -p $(dirname ${DEST})
-        wget -q ${MAGISK_V27_URL} -O ${DEST} || wget ${MAGISK_V27_URL} -O ${DEST}
-        local RCODE=$?
-        if [ "$RCODE" = "0" ]; then
-          echo "Successfully Downloaded Magisk v27.0 to ${DEST}!"
-          echo "Done!"
-        else
-          echo "Failed to Download Magisk v27.0 to ${DEST}!"
-        fi
-      fi
-    fi
-}
-export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
-download_magisk $FOX_USE_SPECIFIC_MAGISK_ZIP
+export OF_NO_RELOAD_AFTER_DECRYPTION="1"
+export OF_FIX_DECRYPTION_ON_DATA_MEDIA="1"
+export OF_UNBIND_SDCARD_F2FS="1"
 
 fi
 
