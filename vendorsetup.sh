@@ -38,13 +38,13 @@ export FOX_ENABLE_APP_MANAGER="1"
 export OF_ALLOW_DISABLE_NAVBAR="0"
 export OF_USE_LEGACY_BATTERY_SERVICES="1"
 #export FOX_USE_NANO_EDITOR="1"
-#export FOX_USE_XZ_UTILS="1"
+export FOX_USE_XZ_UTILS="1"
 
 #reduce the size for booting
 export FOX_REMOVE_BASH="1"
 export FOX_REMOVE_AAPT="1"
-export FOX_DRASTIC_SIZE_REDUCTION="1"
-#export FOX_EXTREME_SIZE_REDUCTION="1"
+export FOX_EXCLUDE_NANO_EDITOR="1"
+#export FOX_DRASTIC_SIZE_REDUCTION="1"
 
 # for oppo/realme ozip decryption
 export OF_SUPPORT_OZIP_DECRYPTION=1
@@ -62,7 +62,7 @@ export FOX_VARIANT="Unified"
 
 #f11 notch
 export OF_HIDE_NOTCH="1"
-export OF_STATUS_H="77"
+export OF_STATUS_H="81"
 export OF_CLOCK_POS="1"
 
 export OF_SCREEN_H="2340"
