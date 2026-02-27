@@ -109,7 +109,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_ROOT_EXTRA_FOLDERS := metadata my_product my_heytap my_company my_preload my_stock my_carrier my_region my_engineering my_manifest
 
 # screen dimentions and status bar
-# TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_DENSITY := 480
@@ -151,8 +151,6 @@ TW_OZIP_DECRYPT_KEY := ACAC1E13A72431AE4A1B22BBA1C1C6A2
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_INTERNAL_STORAGE_PATH := "/data/media/0"  
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-#TW_EXTERNAL_STORAGE_PATH := "/external_sd"
-#TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_USE_LEGACY_BATTERY_SERVICES := true
 RECOVERY_SDCARD_ON_DATA := true
 TWRP_INCLUDE_LOGCAT := true
