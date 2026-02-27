@@ -63,7 +63,7 @@ export FOX_VARIANT="Unified"
 #f11 notch
 export OF_HIDE_NOTCH="1"
 export OF_STATUS_H="82"
-export OF_CLOCK_POS="1"
+#export OF_CLOCK_POS="1"
 
 export OF_SCREEN_H="2340"
 export OF_STATUS_INDENT_LEFT=75
