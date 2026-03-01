@@ -9,8 +9,6 @@ setprop persist.sys.firstlaunch false
 on fs
     install_keyring
     setprop crypto.ready 1
-    # Erase the para partition to prevent recovery-looping
-    start erase_para
 
 service keystore_auth /system/bin/keystore_auth
     oneshot
@@ -100,13 +98,6 @@ service mobicore /vendor/bin/mcDriverDaemon --P1 /mnt/vendor/persist/mcRegistry 
     group root
     disabled
     seclabel u:r:recovery:s0
-
-service erase_para /sbin/dd if=/dev/zero of=/dev/block/by-name/para
-    user root
-    group root
-    disabled
-    seclabel u:r:recovery:s0
-    oneshot
 
 #For decryption
 
