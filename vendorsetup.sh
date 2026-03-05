@@ -37,14 +37,13 @@ export FOX_VANILLA_BUILD="1" #this var enables all above
 export FOX_ENABLE_APP_MANAGER="1"
 export OF_ALLOW_DISABLE_NAVBAR="0"
 export OF_USE_LEGACY_BATTERY_SERVICES="1"
-#export FOX_USE_NANO_EDITOR="1"
 export FOX_USE_XZ_UTILS="1"
 
 #reduce the size for booting
 export FOX_REMOVE_BASH="1"
-#export FOX_REMOVE_AAPT="1"
 export FOX_EXCLUDE_NANO_EDITOR="1"
 #export FOX_DRASTIC_SIZE_REDUCTION="1"
+#export FOX_USE_NANO_EDITOR="1"
 
 # for oppo/realme ozip decryption
 export OF_SUPPORT_OZIP_DECRYPTION=1
