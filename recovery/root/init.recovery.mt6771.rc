@@ -9,6 +9,7 @@ setprop persist.sys.firstlaunch false
 on fs
     install_keyring
     setprop crypto.ready 1
+    write /proc/touchpanel/tp_fw_update 0
 
 service keystore_auth /system/bin/keystore_auth
     oneshot
@@ -144,8 +145,8 @@ on property:enable.fbe.service=0
 on boot
     start health-hal-2-1
 
-  #  chown system system /proc/touchpanel/tp_fw_update
-  #  write /proc/touchpanel/tp_fw_update 1
+    chown system system /proc/touchpanel/tp_fw_update
+    write /proc/touchpanel/tp_fw_update 1
 
 
 service health-hal-2-1 /system/bin/android.hardware.health@2.1-service
